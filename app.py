@@ -22,7 +22,7 @@ st.set_page_config(
 )
 
 # Import internal modules
-from src.data_loader import (
+from data_loader import (
     load_raw_dataset,
     clean_water_dataset,
     load_feature_list,
@@ -31,7 +31,7 @@ from src.data_loader import (
     prepare_labelled_evaluation_data,
     find_conductivity_column
 )
-from src.model_utils import (
+from model_utils import (
     load_trained_model,
     get_model_metadata,
     get_feature_importances_df,
@@ -40,7 +40,7 @@ from src.model_utils import (
     check_parameter_thresholds,
     ENVIRONMENTAL_BENCHMARKS
 )
-from src.visualizations import (
+from visualizations import (
     plot_missing_values,
     plot_feature_distribution,
     plot_correlation_heatmap,
@@ -51,7 +51,7 @@ from src.visualizations import (
     plot_sample_radar_comparison,
     plot_yearly_trends
 )
-from src.ui_components import (
+from ui_components import (
     apply_custom_theme,
     render_header_banner,
     render_safety_warning,
